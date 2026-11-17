@@ -1,0 +1,975 @@
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    font-family: 'Sniglet', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff1f3;
+    color: #291448;
+    margin: 0;
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    font-size: 18px;
+}
+
+nav a {
+    color: #291448;
+    text-decoration: none;
+    margin: 10px;
+}
+
+button {
+    background-color: #a63fe0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+@keyframes textoEntrar {
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.inicio {
+    padding: 40px 60px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.texto {
+    position: relative;
+    z-index: 2;
+}
+
+.texto small {
+    color: #e57aa9;
+    font-size: 18px;
+}
+
+.inicio h1 {
+    font-size: 35px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.inicio h1 span {
+    color: #d36ab0;
+}
+
+.inicio p {
+    width: 300px;
+    font-size: 14px;
+    color: black;
+    line-height: 1.3;
+}
+
+.imagem-celular {
+    width: 450px;
+    height: 300px;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+.ideia {
+    background: white;
+    border: 1px solid #291448;
+    border-radius: 30px;
+    padding: 20px;
+    width: 45%;
+    height: 105px;
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    z-index: 3;
+}
+
+.ideia input {
+    border: none;
+    width: 90%;
+    padding: 5px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.ideia button {
+    display: block;
+    background: none;
+    color: #291448;
+    font-size: 22px;
+    padding: 5px 0;
+}
+
+@keyframes entradaPagina {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body {
+    animation: entradaPagina 2s ease-out forwards;
+    overflow-x: hidden;
+}
+/* ==============================
+   PROJETOS
+============================== */
+
+.projetos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 50px 20px;
+}
+
+.projetos .card {
+    width: 30%;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    overflow: visible;
+    background: transparent;
+    border-radius: 0;
+}
+
+.projetos .card img {
+    display: block;
+    width: 110%;
+    height: auto;
+    max-width: 100%;
+    object-fit: unset;
+    object-position: center;
+}
+
+/* ==============================
+   INCENTIVOS
+============================== */
+
+.incentivos {
+    padding: 25px 50px;
+}
+
+/* TÍTULO E BOTÃO */
+
+.incentivos-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 0 8px;
+}
+
+.titulo-incentivos h2 {
+    font-size: 25px;
+    margin: 0 0 5px;
+    color: #291448;
+}
+
+.titulo-incentivos p {
+    font-size: 13px;
+    margin: 0;
+    color: #291448;
+}
+
+.botao-incentivos {
+    background: #a63fe0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 28px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* CARDS DE BENEFÍCIOS */
+
+.beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.beneficio {
+    flex: 1;
+    height: 200px;
+    border: 1.5px solid #59416c;
+    border-radius: 15px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    gap: 15px;
+}
+
+.conteudo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.conteudo p {
+    flex: 1;
+    font-size: 19px;
+    line-height: 1.3;
+    text-align: center;
+    color: #291448;
+    margin: 0;
+}
+
+.beneficio h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 0;
+    color: #291448;
+}
+
+/* ==============================
+   PLANOS
+============================== */
+
+.planos {
+    padding: 25px 15px;
+}
+
+.planos > h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    color: #291448;
+}
+
+.lista-planos {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.plano-card {
+    flex: 1;
+    height: 181px;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 18px;
+    position: relative;
+}
+
+/* CORES */
+
+.basico {
+    border-color: #ffbdad;
+    color: #291448;
+}
+
+.profissional {
+    border-color: #ff8eb7;
+    color: #291448;
+}
+
+.corporativo {
+    border-color: #d5a4ed;
+    color: #291448;
+}
+
+/* CATEGORIAS */
+
+.categoria {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    background: #ffd0b5;
+}
+
+.profissional .categoria {
+    background: #ffb5d0;
+}
+
+.corporativo .categoria {
+    background: #d9b8f5;
+}
+
+/* PREÇOS */
+
+.preco {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.preco strong {
+    font-size: 70px;
+    line-height: 1.2;
+    color: #f07868;
+}
+
+.profissional .preco strong {
+    color: #d83e83;
+}
+
+.corporativo .preco strong {
+    color: #c293ed;
+}
+
+.preco span {
+    font-size: 17px;
+    color: #e57c86;
+}
+
+/* DESCRIÇÕES */
+
+.plano-card h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.plano-card p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* MAIS POPULAR */
+
+.popular {
+    position: absolute;
+    top: -11px;
+    right: 12px;
+    background: #ff8eb7;
+    color: white;
+    border-radius: 15px;
+    padding: 4px 12px;
+    font-size: 11px;
+}
+
+/* ==============================
+   RESPONSIVIDADE - CELULAR
+============================== */
+
+@media (max-width: 600px) {
+
+    /* CABEÇALHO */
+
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* INÍCIO */
+
+    .inicio {
+        height: 400px;
+        padding: 25px;
+    }
+
+    .inicio h1 {
+        font-size: 25px;
+    }
+
+    .imagem-celular {
+        width: 250px;
+        height: 250px;
+        right: 0;
+        top: 100px;
+    }
+
+    .ideia {
+        width: 65%;
+        left: 12%;
+        bottom: 10px;
+    }
+
+    /* PROJETOS */
+
+    .projetos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .projetos .card {
+        width: 100%;
+    }
+
+    /* INCENTIVOS */
+
+    .incentivos {
+        padding: 20px;
+    }
+
+    .incentivos-topo {
+        gap: 15px;
+    }
+
+    .titulo-incentivos h2 {
+        font-size: 20px;
+    }
+
+    .titulo-incentivos p {
+        font-size: 11px;
+    }
+
+    .botao-incentivos {
+        padding: 9px 15px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .beneficios {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .beneficio {
+        width: 100%;
+        height: 185px;
+        flex: none;
+    }
+
+    .conteudo img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .conteudo p {
+        font-size: 16px;
+    }
+
+    /* PLANOS */
+
+    .planos {
+        padding: 25px 15px;
+    }
+
+    .planos > h2 {
+        font-size: 26px;
+    }
+
+    .lista-planos {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .plano-card {
+        width: 100%;
+        min-height: 181px;
+    }
+
+    .preco strong {
+        font-size: 32px;
+    }
+
+}
+
+/* PÁGINA DE SOLUÇÕES */
+
+.solucoes-banner,
+.solucao-sites,
+.solucao-aplicativos,
+.solucao-sistemas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 500px;
+    padding: 70px 8%;
+}
+
+/* TEXTOS */
+.solucoes-banner-texto,
+.solucao-texto {
+    width: 50%;
+}
+
+.solucoes-banner-texto small,
+.solucao-texto small {
+    color: #d36ab0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.solucoes-banner-texto h1 {
+    color: #291448;
+    font-size: 48px;
+    line-height: 1.2;
+    margin:15px 0;
+}
+
+/* DESTAQUE EM ROSA */
+.solucoes-banner-texto h1 span {
+    color: #d36ab0;
+}
+
+.solucao-texto h2 {
+    color: #291448;
+    font-size:20px;
+    margin: 10px 0;
+}
+
+.solucoes-banner-texto p,
+.solucao-texto p {
+    color: #291448;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 550px;
+}
+
+/* IMAGENS */
+.solucoes-banner img {
+    width: 45%;
+    max-width: 480px;
+    height: auto;
+}
+
+.solucao-sites img,
+.solucao-aplicativos img,
+.solucao-sistemas img {
+    width:55%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* TÓPICOS E ÍCONES */
+.solucao-texto ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 22px
+}
+
+.solucao-texto li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #291448;
+    font-size:20px;
+    margin-bottom:20px;
+}
+.solucao-texto li img {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    object-fit: contain;
+    flex-shrink: 0 0 55px;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .solucoes-banner,
+    .solucao-sites,
+    .solucao-aplicativos,
+    .solucao-sistemas {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 7%;
+    }
+
+    .solucoes-banner-texto,
+    .solucao-texto {
+        width: 100%;
+    }
+
+    .solucoes-banner-texto h1 {
+        font-size: 32px;
+    }
+
+    .solucoes-banner img,
+    .solucao-sites img,
+    .solucao-aplicativos img,
+    .solucao-sistemas img {
+        width: 85%;
+    }
+
+    .solucao-texto h2 {
+        font-size: 25px;
+    }
+
+    .solucao-texto ul {
+        display: inline-block;
+        text-align: left;
+    }
+}
+/* FRASES ROSAS DAS TRÊS SEÇÕES */
+.solucao-texto small {
+    color: #d36ab0;
+    font-size: 23px;
+}
+
+/* TÍTULOS DAS TRÊS SEÇÕES */
+.solucao-texto h2 {
+    color: #291448;
+    font-size: 44px;
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+/* PÁGINA DE PROJETOS */
+
+.projetos-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 35px 8%;
+    min-height: 340px;
+}
+
+.projetos-banner-texto {
+    width: 45%;
+}
+
+.projetos-banner-texto small,
+.parceiros small {
+    color: #d36ab0;
+    font-size: 15px;
+}
+
+.projetos-banner-texto h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.projetos-banner-texto h1 span,
+.contato-texto h2 span {
+    color: #d36ab0;
+}
+
+.projetos-banner-texto p {
+    color: black;
+    font-size: 16px;
+   line-height: 1.5;
+}
+
+.projetos-banner img {
+    width: 50%;
+    max-width: 480px;
+}
+
+
+/* PROJETOS EM DESTAQUE */
+
+.projetos-destaque {
+    padding: 20px 6% 35px;
+}
+
+.projetos-destaque h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.projetos-grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.projeto-item img {
+    width: 80%;
+    display: block;
+    border-radius: 10px;
+    margin:auto;
+}
+
+
+/* PARCEIROS */
+
+.parceiros {
+    padding: 25px 8%;
+}
+
+.parceiros > small {
+    display: block;
+    color: #d36ab0;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.parceiros-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 20px auto;
+}
+
+.parceiros-logos img {
+    width: 25%;
+    max-width: 190px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* CONTATO */
+
+.projetos-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px 8% 45px;
+    gap: 30px;
+    box-sizing: border-box;
+}
+.contato-texto h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+.contato-texto h2 span {
+    color: #d36ab0;
+}
+
+
+.contato-texto p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 450px;
+}
+
+.projetos-contato button {
+    background: #a63fe0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+nav a.pagina-atual {
+    text-decoration: underline;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .projetos-banner {
+        flex-direction: column;
+        padding: 30px 7%;
+    }
+
+    .projetos-banner-texto {
+        width: 100%;
+    }
+
+    .projetos-banner-texto h1 {
+        font-size: 40px;
+    }
+
+    .projetos-banner img {
+        width: 100%;
+    }
+
+    .projetos-grade {
+        grid-template-columns: 1fr;
+    }
+
+    .parceiros-logos {
+        flex-wrap: wrap;
+    }
+
+    .parceiros-logos img {
+        width: 40%;
+    }
+
+    .projetos-contato {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contato-texto h2 {
+        font-size: 27px;
+    }
+
+}
+/* SOBRE NÓS */
+
+.quem-somos, .final-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 8%;
+    gap: 30px;
+}
+
+.quem-somos div, .final-sobre div {
+    width: 45%;
+}
+
+.quem-somos small, .final-sobre small, .valores small {
+    color: #d36ab0;
+}
+
+.quem-somos h1, .final-sobre h2 {
+    font-size: 35px;
+    color: #291448;
+}
+
+.quem-somos span {
+    color: #d36ab0;
+}
+
+.quem-somos p, .final-sobre p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.quem-somos img, .final-sobre img {
+    width: 48%;
+    object-fit: contain;
+}
+
+/* DIFERENCIAIS */
+
+.diferenciais, .cards-valores, .cards-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px 7%;
+}
+
+.diferenciais div, .cards-valores div, .cards-depoimentos div {
+    flex: 1;
+    padding: 18px;
+    border: 1px solid #e8c9ed;
+    border-radius: 15px;
+    background: #fff8fc;
+}
+
+.diferenciais div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.diferenciais img, .cards-valores img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* VALORES E DEPOIMENTOS */
+
+.valores, .depoimentos {
+    text-align: center;
+    padding: 25px 5%;
+}
+
+.valores h2, .depoimentos h2 {
+    color: #291448;
+    font-size: 27px;
+}
+
+.cards-valores {
+    text-align: left;
+}
+
+.cards-valores h3 {
+    color: #291448;
+}
+
+.cards-valores p, .cards-depoimentos p {
+    color: #291448;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.depoimentos > p {
+    color: #d36ab0;
+}
+
+.cards-depoimentos {
+    text-align: left;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .quem-somos, .final-sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quem-somos div, .final-sobre div,
+    .quem-somos img, .final-sobre img {
+        width: 100%;
+    }
+
+    .diferenciais, .cards-valores, .cards-depoimentos {
+        flex-direction: column;
+    }
+}
